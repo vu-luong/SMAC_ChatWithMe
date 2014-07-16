@@ -1,0 +1,119 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="vertical" >
+	
+    
+    <ImageView
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:src="@drawable/bgk3"
+        android:scaleType="matrix"
+        />
+    
+    <ListView
+        android:id="@+id/listView1"
+        android:layout_width="match_parent"
+        android:layout_height="100dp"
+        android:layout_above="@+id/form"
+        android:layout_alignParentTop="true" 
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginTop="10dp"
+        android:layout_marginBottom="90dp"
+        android:divider="@null"
+		android:dividerHeight="0dp"
+        >
+    </ListView>
+    
+    <ListView
+        android:id="@+id/listView2"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentRight="true"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:layout_marginTop="15dp"
+        android:visibility="invisible"
+        >
+    </ListView>
+
+    <RelativeLayout
+        android:id="@+id/form"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentLeft="true"
+        android:layout_marginBottom="25dp"
+        android:orientation="vertical" >
+
+        <EditText
+            android:id="@+id/editText1"
+            android:layout_width="wrap_content"
+            android:layout_height="39dp"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentTop="true"
+            android:layout_marginRight="70dp"
+            android:layout_toLeftOf="@+id/button1"
+            android:layout_marginTop="60dp"
+            android:layout_marginLeft="14dp"
+            android:ems="10"
+            android:background="@drawable/r_edittext"
+            android:inputType="text"
+            android:textSize="14sp"
+            android:paddingLeft="8dp"
+            android:paddingRight="50dp"
+            android:hint="@string/hint_msg" 
+            />
+
+        <Button
+            android:id="@+id/button1"
+            android:layout_width="42dp"
+            android:layout_height="36dp"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentTop="true"
+            android:layout_marginRight="15dp"
+            android:layout_marginTop="61.5dp"
+            android:background="@drawable/send"
+            android:shadowDx="0"
+            android:shadowDy="0"
+            android:shadowRadius="10"
+            android:textColor="#868984"
+            android:textSize="18.5dp" />
+        <Button
+            android:id="@+id/button2"
+            android:layout_width="42dp"
+            android:layout_height="36dp"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentTop="true"
+            android:layout_marginRight="15dp"
+            android:layout_marginTop="61.5dp"
+            android:background="@drawable/sent"
+            android:shadowDx="0"
+            android:shadowDy="0"
+            android:shadowRadius="10"
+            android:textColor="#868984"
+            android:visibility="invisible"
+            android:textSize="18.5dp" />
+
+    </RelativeLayout>
+
+    <Button
+        android:id="@+id/button3"
+        android:layout_width="42dp"
+        android:layout_height="30dp"
+        android:layout_alignParentBottom="true"
+		android:layout_marginBottom="30dp"
+        android:layout_alignParentRight="true"
+        android:layout_marginRight="71dp"
+        android:background="@drawable/google"
+        android:onClick="speak" />
+
+    
+
+</RelativeLayout>
