@@ -58,7 +58,7 @@ public class ChatWithMe extends Activity {
 	public void onCreate(Bundle savedInstanceState) {
 		super.onCreate(savedInstanceState);
 		//requestWindowFeature(Window.FEATURE_NO_TITLE);//bo thanh title
-		getActionBar().setTitle("Chat with me!");  
+		//getActionBar().setTitle("Chat with me!");  
 		setContentView(R.layout.activity_discuss);
 		
 	    if (!NetworkAvailable()) {
